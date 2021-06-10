@@ -1,0 +1,127 @@
+.gender-container{
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 100px);
+}
+.box-gender {
+    height: 40px;
+    width: 240px;
+    display: flex;
+    border: 1px solid #bbbbbb;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  .box-gender-input {
+    width: 200px;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .box-gender-icon {
+    background-image: url("../../assets/down-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 10px 11px;
+    border-left: 1px solid #bbbbbb;
+    width: 40px;
+    height: 39px;
+    box-sizing: border-box;
+  }
+  .box-gender-input input {
+    width: 170px;
+    height: 100%;
+    border: none;
+    outline: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .box-gender:hover {
+    border: 1px solid #019160;
+  }
+  .box-search-input input:focus .box-search  {
+    border: 1px solid #019160;
+  }
+  .box-gender:hover .box-gender-icon{
+    border-left:1px solid #019160
+  }
+  .box-gender-icon:hover{
+    cursor: pointer;
+  }
+  /**
+  CSS phần content
+  */
+  .gender-content {
+    display: none;
+    position: absolute;
+    z-index: 99999999999999;
+    width: 240px;
+    background-color: #ffffff;
+    padding-top: 3px;
+    animation: animationPopup 2s forwards;
+    border-left: 1px solid #bbbbbb ;
+    border-right: 1px solid #bbbbbb;
+    box-sizing: border-box;
+  }
+  .gender {
+    width: 100%;
+    display: flex;
+    height: 38px;
+    border-bottom: 1px solid #bbbbbb;
+    align-items: center;
+    border-left: 1px;
+    flex-direction: row;
+    color: #000;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+  }
+  .isActived{
+    display: block;
+  }
+  .isActiveContent{
+    display: block;
+  }
+  .gender-content-icon {
+   
+  }
+  .gender-content-text {
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+  }
+  .gender:hover {
+    background-color: #bbbbbb;
+    cursor: pointer;
+  }
+  .gender:hover .box-gender {
+    border: 1px solid #019169 !important;
+  }
+.gender{
+  display: block;
+  display: flex;
+}
+.valueFound{
+  display: block;
+}
+.valueNotFound{
+  display: none;
+}
+.error{
+  border: 1px solid #c9262e;
+}
+.isChoosed{
+  background-color: #019160;
+  color: #fff;
+}
+.isHover{
+  background-color: #bbbbbb;
+  color: #000;
+}
+.icon-selected{
+  width: 35px;
+  height: 40px;
+}
